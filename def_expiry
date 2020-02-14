@@ -9,7 +9,10 @@ def expiry(year):
     
         last_day = calendar.monthrange(year, month)[1]
         day_month = calendar.weekday(year, month, last_day) #0 is monday and 3 is Thu
+        #For NSE options. Last Thu of month
         week = [3,4,5,6,0,1,2]
+        #For CBOE options. Last Fri of month 
+        #week = [4,5,6,0,1,2,3]
         days = -1
         
             
